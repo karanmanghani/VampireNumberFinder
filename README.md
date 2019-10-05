@@ -4,24 +4,24 @@
 
 The goal of the project was to create an Elixir application that can find Vampire numbers between a given range provided by the user and print the vampire number along with its fangs.
 
-##Team Members:
+## Team Members:
 
 1. Karan Manghani (UFID: 7986-9199)
 2. Yaswanth Bellam (UFID: 2461-6390)
 
-##Steps to run the code: 
+## Steps to run the code: 
 1.	Clone/Download the file
 2.	Using CMD/ terminal, go the directory where you have downloaded the zip file
 3.	Type  ‘cd VampireNumberFinder’ (to enter the project directory)
 4.	Run the command “mix run proj1.exs 100000 200000” 
 
-##Actors: 
+## Actors: 
 There are 9 actors in the project. The supervisor and 8 workers.
 
-##Supervisors and Workers:
+## Supervisors and Workers:
 The supervisor creates and handles 8 child workers who work on finding the vampire number within the range given. Using trial and error we found optimum results and improvements using 8 workers rather than 4 or 16. Therefore, we split the user given range into 8 parts and find vampire number and the fangs within that range. Once all the vampire numbers have been found and returned to Printer Genserver module, the Genserver displays the output to the user.
 
-##Test Cases and Output:
+## Test Cases and Output:
  Our program generates the following outputs for the following ranges:
 1.	Lower limit: 1000
 	Upper limit: 2000
@@ -44,6 +44,6 @@ The supervisor creates and handles 8 child workers who work on finding the vampi
 	Ratio: 2.0289
 ![10000000-20000000](/screenshots/10000000-20000000.jpeg)
 
-##Largest Vampire Number attempted:
-![10000000-20000000](/screenshots/largest.PNG)
+## Largest Vampire Number attempted:
+<pre>   </pre>![10000000-20000000](/screenshots/largest.PNG)
 
