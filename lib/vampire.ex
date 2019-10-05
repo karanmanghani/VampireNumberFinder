@@ -1,3 +1,4 @@
+#Printserver Module prints the output returned by each worker that has been stored in the list
 defmodule PrintServer do
   use GenServer
 
@@ -26,7 +27,6 @@ defmodule PrintServer do
   end
 end
 
-
 defmodule Server do
   use GenServer
 
@@ -52,7 +52,7 @@ defmodule Server do
   end
 
 end
-
+#The Vampire module generates vampire numbers specified in the limit (list datatype)
 defmodule Vampire do
   
   def main_module(limit) do
@@ -61,7 +61,6 @@ defmodule Vampire do
     low..high
       |>Task.async_stream(&vamp/1, max_concurrency: System.schedulers_online)
       |> Enum.to_list()
-  
   end
     
   def vamp(num) do
@@ -134,7 +133,7 @@ defmodule Vampire do
   def fang_printer([], _valid_factor_pairs, empty), do: empty
   def fang_printer([ a | tail ], valid_factor_pairs, empty) do
         fang_printer(tail, valid_factor_pairs, [Enum.at(valid_factor_pairs,a) | empty]) 
-    end
   end
+end
 
 
