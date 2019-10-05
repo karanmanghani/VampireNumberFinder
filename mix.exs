@@ -10,7 +10,7 @@ defmodule Vampire.MixProject do
       deps: deps()
     ]
   end
-
+  #Our project is defined with the mix.exs file created using mix 
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
@@ -18,7 +18,7 @@ defmodule Vampire.MixProject do
   
     ]
   end
-
+ 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
