@@ -45,5 +45,5 @@ The supervisor creates and handles 8 child workers who work on finding the vampi
 ![10000000-20000000](/screenshots/10000000-20000000.jpeg)
 
 ## Largest Vampire Number attempted:
-<pre>   </pre>![10000000-20000000](/screenshots/largest.PNG)
+![10000000-20000000](/screenshots/largest.PNG)
 
